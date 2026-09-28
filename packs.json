@@ -1,0 +1,60 @@
+{
+  "template": "tide-lanterns",
+  "roundSeconds": 60,
+  "themes": [
+    {
+      "id": "tide",
+      "title": "Tide Pool",
+      "sky": ["#07151c", "#0c3d45", "#14685f"],
+      "glow": "#ffc27a",
+      "accent": "#8dffe4",
+      "ink": "#fff6e4",
+      "body": "moon",
+      "motes": "bubbles",
+      "pairs": [
+        { "word": "crab", "icon": "crab", "cue": "starts with k" },
+        { "word": "whale", "icon": "whale", "cue": "starts with w" },
+        { "word": "turtle", "icon": "turtle", "cue": "starts with t" },
+        { "word": "octopus", "icon": "octopus", "cue": "starts with o" },
+        { "word": "dolphin", "icon": "dolphin", "cue": "starts with d" },
+        { "word": "starfish", "icon": "starfish", "cue": "starts with st" }
+      ]
+    },
+    {
+      "id": "space",
+      "title": "Night Orbit",
+      "sky": ["#070714", "#1b1240", "#3c2072"],
+      "glow": "#d2c4ff",
+      "accent": "#ffe08a",
+      "ink": "#f6f1ff",
+      "body": "planet",
+      "motes": "stars",
+      "pairs": [
+        { "word": "rocket", "icon": "rocket", "cue": "starts with r" },
+        { "word": "planet", "icon": "planet", "cue": "starts with pl" },
+        { "word": "comet", "icon": "comet", "cue": "starts with k" },
+        { "word": "alien", "icon": "alien", "cue": "starts with a long a" },
+        { "word": "astronaut", "icon": "astronaut", "cue": "starts with a" },
+        { "word": "moon", "icon": "moon", "cue": "starts with m" }
+      ]
+    },
+    {
+      "id": "picnic",
+      "title": "Sunny Picnic",
+      "sky": ["#1a4f86", "#3c86c4", "#e7a84a"],
+      "glow": "#ffe39a",
+      "accent": "#ff8d6b",
+      "ink": "#fff8ea",
+      "body": "sun",
+      "motes": "pollen",
+      "pairs": [
+        { "word": "apple", "icon": "apple", "cue": "starts with a" },
+        { "word": "cake", "icon": "cake", "cue": "starts with k" },
+        { "word": "grapes", "icon": "grapes", "cue": "starts with gr" },
+        { "word": "cookie", "icon": "cookie", "cue": "starts with k" },
+        { "word": "cheese", "icon": "cheese", "cue": "starts with ch" },
+        { "word": "juice", "icon": "juice", "cue": "starts with j" }
+      ]
+    }
+  ]
+}

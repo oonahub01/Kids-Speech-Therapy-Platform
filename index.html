@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tide Lanterns</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23ffd7a1'/%3E%3Ccircle cx='24' cy='28' r='3' fill='%233a2916'/%3E%3Ccircle cx='40' cy='28' r='3' fill='%233a2916'/%3E%3Cpath d='M22 38 Q32 48 42 38' fill='none' stroke='%233a2916' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <canvas id="game" aria-label="Tide Lanterns game"></canvas>
+  <header>
+    <p id="role">Therapist</p>
+    <h1 id="title">Tide Pool</h1>
+  </header>
+  <div class="hud" aria-live="polite">
+    <div id="timer">60</div>
+    <div id="progress">0 of 6 pairs</div>
+  </div>
+  <div id="sync" class="sync">Waiting for student</div>
+  <button id="sound" class="sound" type="button">Sound on</button>
+  <p id="hint" class="hint">Tap a lantern, then tap its match.</p>
+  <aside id="dock" class="dock">
+    <div id="themes" class="themes"></div>
+    <div class="words-wrap">
+      <span class="label">Speech card</span>
+      <div id="words" class="words"></div>
+    </div>
+    <div class="actions">
+      <button id="pause" type="button">Pause</button>
+      <button id="nudge" type="button">Nudge</button>
+      <button id="reset" type="button">New round</button>
+      <button id="guide" type="button" aria-pressed="false">Firefly</button>
+      <button id="pop" type="button">Student tablet</button>
+      <button id="show-json" type="button">Content JSON</button>
+    </div>
+  </aside>
+  <div id="veil" class="veil" hidden>
+    <div class="veil-card">
+      <h2 id="veil-title"></h2>
+      <p id="veil-sub"></p>
+      <div id="veil-actions" class="actions"></div>
+    </div>
+  </div>
+  <div id="practice" class="practice" hidden>
+    <div class="practice-card">
+      <p class="eyebrow">Your turn to say</p>
+      <canvas id="picon" width="160" height="160" aria-hidden="true"></canvas>
+      <h2 id="practice-word">word</h2>
+      <p id="practice-cue"></p>
+      <p id="practice-note"></p>
+      <div class="actions">
+        <button id="heard" class="primary" type="button">Heard it · continue</button>
+      </div>
+    </div>
+  </div>
+  <p id="toast" class="toast" hidden></p>
+  <dialog id="json">
+    <pre id="json-pre"></pre>
+    <button id="json-close" type="button">Close</button>
+  </dialog>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
